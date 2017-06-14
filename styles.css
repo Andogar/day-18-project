@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin: 50px auto 0 auto;
+  font-size: 1.5rem;
+}
+
+.customers {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.customer-card {
+  text-align: center;
+  margin-top: 60px;
+}
+
+#picture {
+  width: 90%;
+}
+
+#name {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#name:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 35%;
+  padding-top: 10px;
+  border-bottom: 2px solid green;
+}
+
+#email {
+  text-transform: uppercase;
+  color: darkgrey;
+}
+
+#street, #city, #cell {
+  text-transform: capitalize;
+  margin: 0;
+  color: grey;
+  line-height: 1.5;
+}
+
+#street {
+  margin-top: 5%;
+}
+
+#social {
+  margin-top: 5%;
+  color: transparent;
+  text-shadow: 1px 1px 15px green;
+}
+
+@media screen and (min-width: 480px) {
+
+.customers {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+#picture {
+  width: 90%;
+}
+
+.customer-card {
+  width: 50%;
+  font-size: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#name:after {
+  width: 60%;
+}
+
+#email {
+  font-size: .7rem;
+}
+
+@media screen and (min-width: 768px) {
+
+.customer-card {
+  width: 25%;
+  font-size: .8rem;
+}
+
+#email {
+  font-size: .6rem;
+}
+
+}
+
+@media screen and (min-width: 1280px) {
+
+.customer-card, #email {
+  font-size: 1rem;
+}
+
+
+}
